@@ -153,15 +153,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   width: 10
   height: 10
-  groundTile: {fileID: 8254775651480160326, guid: 2ebbb877a020d554fbbaa1e209e898fb, type: 3}
-  waterTile: {fileID: 1718569817027806076, guid: c1ad86c6eea2e5f48997ecbfd0d28b0d, type: 3}
-  wallTile: {fileID: 7911483680946508137, guid: 806d6fe40600a0a40a04f6ba178096f4, type: 3}
-  forestTile: {fileID: 2371171680536722749, guid: 07884646617b95844b3162e4c8f5aa15, type: 3}
-  grassTile: {fileID: 4748588246122849094, guid: f9e49bce359c0df4c84c0278e6357f76, type: 3}
-  sandTile: {fileID: 3128821950356871551, guid: d74213d65f76f9c4ea45c3a7bc95060b, type: 3}
-  enemyPrefab: {fileID: 3610993296195931117, guid: 79c5041387a41f248bec3717c5105988, type: 3}
-  trapPrefab: {fileID: 4684052825715125338, guid: fc254181c9cb3f542b6a8f1667a5668f, type: 3}
-  bonusPrefab: {fileID: 8522851193508325307, guid: 882e04367c11d004b9fd8fae1f578f4c, type: 3}
+  groundTile: {fileID: 1583383937426880297, guid: 7763347f54305c643bd651b1b9cba006, type: 3}
+  waterTile: {fileID: 2483542376383548662, guid: 7276a49e3f3e2b643b198bd85e15b304, type: 3}
+  wallTile: {fileID: 513847686271968179, guid: fb55286b940333f43b4f2cbf8e3d25ce, type: 3}
+  forestTile: {fileID: 3080180212956201254, guid: 071e1c1566910564aae39336ca58e3cf, type: 3}
+  grassTile: {fileID: 1396179619094373226, guid: 18ada9eee6cf23c4a8aa9f771854dd50, type: 3}
+  sandTile: {fileID: 8413691333658634916, guid: ac7f16ae21f88af4fbf53b2bb7f50459, type: 3}
+  enemyPrefab: {fileID: 5432625330164735392, guid: 90449d2f9eff99c4cb621f8cbc0e5872, type: 3}
+  trapPrefab: {fileID: 3682590725418368566, guid: 5901bedb4fb4cc64fb1344fbd0a672e4, type: 3}
+  bonusPrefab: {fileID: 6474903633687626770, guid: 665bd2cf9122a614588d4edab8ddc742, type: 3}
   waterChance: 0.2
   forestChance: 0.15
   sandChance: 0.1
