@@ -256,7 +256,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7c718de4af4b6a644b497192036b9edf, type: 2}
+  - {fileID: 2100000, guid: d945ce8abd6474747bd83c69112219cd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -383,6 +383,8 @@ MonoBehaviour:
   height: 6
   cellPrefab: {fileID: 6337877391142038625, guid: e85d3e1f0dbf25945bd7ffc1ea3c674a, type: 3}
   cellLabelPrefab: {fileID: 5656475438645598492, guid: 4cd4231fc8775f24c963c845c85c6394, type: 3}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  touchedColor: {r: 1, g: 0, b: 1, a: 1}
 --- !u!4 &506650604
 Transform:
   m_ObjectHideFlags: 0
@@ -599,7 +601,7 @@ GameObject:
   - component: {fileID: 1468949881}
   - component: {fileID: 1468949883}
   m_Layer: 5
-  m_Name: Hex Grid Canvas
+  m_Name: HexGridCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
