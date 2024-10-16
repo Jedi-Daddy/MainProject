@@ -15,6 +15,10 @@ public static class HexMetrics
 
     public const float elevationStep = 5f;
 
+    public const int terracesPerSlope = 2;
+
+    public const int terraceSteps = terracesPerSlope * 2 + 1;
+
     static Vector3[] corners = {
         new Vector3(0f, 0f, outerRadius),
         new Vector3(innerRadius, 0f, 0.5f * outerRadius),
