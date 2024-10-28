@@ -983,11 +983,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73a14902ea33df8419ed6b54e8d2ab05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  width: 6
-  height: 6
+  chunkCountX: 4
+  chunkCountZ: 3
   defaultColor: {r: 1, g: 1, b: 1, a: 1}
   cellPrefab: {fileID: 6337877391142038625, guid: e85d3e1f0dbf25945bd7ffc1ea3c674a, type: 3}
   cellLabelPrefab: {fileID: 5656475438645598492, guid: 4cd4231fc8775f24c963c845c85c6394, type: 3}
+  chunkPrefab: {fileID: 5332375569129040077, guid: 174d6682f49ee794586fc27a03a32fd4, type: 3}
   noiseSource: {fileID: 2800000, guid: b989f0e5adfbafe498b9d3a911b326a9, type: 3}
 --- !u!4 &506650604
 Transform:
