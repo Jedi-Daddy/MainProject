@@ -127,6 +127,16 @@ public class HexCell : MonoBehaviour
         }
     }
 
+    public float StreamBedY
+    {
+        get
+        {
+            return
+                (elevation + HexMetrics.streamBedElevationOffset) *
+                HexMetrics.elevationStep;
+        }
+    }
+
     Color color;
 
     int elevation = int.MinValue;
