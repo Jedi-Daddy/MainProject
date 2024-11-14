@@ -79,6 +79,31 @@ public class HexCell : MonoBehaviour
         }
     }
 
+    public int WaterLevel
+    {
+        get
+        {
+            return waterLevel;
+        }
+        set
+        {
+            if (waterLevel == value)
+            {
+                return;
+            }
+            waterLevel = value;
+            Refresh();
+        }
+    }
+
+    public bool IsUnderwater
+    {
+        get
+        {
+            return waterLevel > elevation;
+        }
+    }
+
     public bool HasIncomingRiver
     {
         get
@@ -158,15 +183,6 @@ public class HexCell : MonoBehaviour
         }
     }
 
-    public float RiverSurfaceY
-    {
-        get
-        {
-            return
-                (elevation + HexMetrics.riverSurfaceElevationOffset) *
-                HexMetrics.elevationStep;
-        }
-    }
 
     public float StreamBedY
     {
@@ -178,9 +194,30 @@ public class HexCell : MonoBehaviour
         }
     }
 
+    public float RiverSurfaceY
+    {
+        get
+        {
+            return
+                (elevation + HexMetrics.waterElevationOffset) *
+                HexMetrics.elevationStep;
+        }
+    }
+
+    public float WaterSurfaceY
+    {
+        get
+        {
+            return
+                (waterLevel + HexMetrics.waterElevationOffset) *
+                HexMetrics.elevationStep;
+        }
+    }
+
     Color color;
 
     int elevation = int.MinValue;
+    int waterLevel;
 
     bool hasIncomingRiver, hasOutgoingRiver;
     HexDirection incomingRiver, outgoingRiver;
