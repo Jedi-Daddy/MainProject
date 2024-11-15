@@ -14,6 +14,10 @@ public static class HexMetrics
 
     public const float blendFactor = 1f - solidFactor;
 
+    public const float waterFactor = 0.6f;
+
+    public const float waterBlendFactor = 1f - waterFactor;
+
     public const float elevationStep = 3f;
 
     public const int terracesPerSlope = 2;
@@ -83,10 +87,26 @@ public static class HexMetrics
             (0.5f * solidFactor);
     }
 
+    public static Vector3 GetFirstWaterCorner(HexDirection direction)
+    {
+        return corners[(int)direction] * waterFactor;
+    }
+
+    public static Vector3 GetSecondWaterCorner(HexDirection direction)
+    {
+        return corners[(int)direction + 1] * waterFactor;
+    }
+
     public static Vector3 GetBridge(HexDirection direction)
     {
         return (corners[(int)direction] + corners[(int)direction + 1]) *
             blendFactor;
+    }
+
+    public static Vector3 GetWaterBridge(HexDirection direction)
+    {
+        return (corners[(int)direction] + corners[(int)direction + 1]) *
+            waterBlendFactor;
     }
 
     public static Vector3 TerraceLerp(Vector3 a, Vector3 b, int step)
