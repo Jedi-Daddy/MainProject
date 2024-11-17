@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Water Shore
-  m_Shader: {fileID: 4800000, guid: 19f0e309945e6423da6ef0f96f72debf, type: 3}
+  m_Shader: {fileID: 4800000, guid: d73fd14cbc648904fae1904b2ff17087, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
