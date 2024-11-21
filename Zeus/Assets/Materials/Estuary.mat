@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Estuary
-  m_Shader: {fileID: 4800000, guid: 2e44ff6aadac34b18ab4e065d493f0b8, type: 3}
+  m_Shader: {fileID: 4800000, guid: af2cd09d1fb273948960c9e60e0501f1, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -44,7 +44,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 38701cdeb1fb9427cbb585f917aa59cb, type: 3}
+        m_Texture: {fileID: 2800000, guid: b989f0e5adfbafe498b9d3a911b326a9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
