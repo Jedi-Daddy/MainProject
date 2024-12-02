@@ -311,7 +311,7 @@ GameObject:
   - component: {fileID: 11940813}
   - component: {fileID: 11940814}
   m_Layer: 5
-  m_Name: Toggle Green
+  m_Name: Color Green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -387,7 +387,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1038429832}
         m_TargetAssemblyTypeName: HexMapEditor, Assembly-CSharp
-        m_MethodName: SelectColor
+        m_MethodName: SetTerrainTypeIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1199,7 +1199,7 @@ GameObject:
   - component: {fileID: 133830288}
   - component: {fileID: 133830289}
   m_Layer: 5
-  m_Name: Toggle White
+  m_Name: Color White
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1275,7 +1275,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1038429832}
         m_TargetAssemblyTypeName: HexMapEditor, Assembly-CSharp
-        m_MethodName: SelectColor
+        m_MethodName: SetTerrainTypeIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2871,7 +2871,7 @@ GameObject:
   - component: {fileID: 546609302}
   - component: {fileID: 546609303}
   m_Layer: 5
-  m_Name: Toggle Blue
+  m_Name: Color Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2947,7 +2947,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1038429832}
         m_TargetAssemblyTypeName: HexMapEditor, Assembly-CSharp
-        m_MethodName: SelectColor
+        m_MethodName: SetTerrainTypeIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5781,7 +5781,7 @@ GameObject:
   - component: {fileID: 1042189313}
   - component: {fileID: 1042189314}
   m_Layer: 5
-  m_Name: Toggle ---
+  m_Name: Color ---
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5857,7 +5857,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1038429832}
         m_TargetAssemblyTypeName: HexMapEditor, Assembly-CSharp
-        m_MethodName: SelectColor
+        m_MethodName: SetTerrainTypeIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7239,7 +7239,7 @@ GameObject:
   - component: {fileID: 1449140455}
   - component: {fileID: 1449140456}
   m_Layer: 5
-  m_Name: Toggle Yellow
+  m_Name: Color Yellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7315,7 +7315,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1038429832}
         m_TargetAssemblyTypeName: HexMapEditor, Assembly-CSharp
-        m_MethodName: SelectColor
+        m_MethodName: SetTerrainTypeIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9628,7 +9628,7 @@ GameObject:
   - component: {fileID: 1859828547}
   - component: {fileID: 1859828548}
   m_Layer: 5
-  m_Name: Toggle Orange
+  m_Name: Color Orange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9704,7 +9704,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1038429832}
         m_TargetAssemblyTypeName: HexMapEditor, Assembly-CSharp
-        m_MethodName: SelectColor
+        m_MethodName: SetTerrainTypeIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
