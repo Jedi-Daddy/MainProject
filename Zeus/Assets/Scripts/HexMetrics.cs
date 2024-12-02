@@ -56,6 +56,12 @@ public static class HexMetrics
         new Vector3(0f, 0f, outerRadius)
     };
 
+    static float[][] featureThresholds = {
+        new float[] {0.0f, 0.0f, 0.4f},
+        new float[] {0.0f, 0.4f, 0.6f},
+        new float[] {0.4f, 0.6f, 0.8f}
+    };
+
     public static Texture2D noiseSource;
 
     public static Vector4 SampleNoise(Vector3 position)
@@ -91,6 +97,11 @@ public static class HexMetrics
             z += hashGridSize;
         }
         return hashGrid[x + z * hashGridSize];
+    }
+
+    public static float[] GetFeatureThresholds(int level)
+    {
+        return featureThresholds[level];
     }
 
     public static Vector3 GetFirstCorner(HexDirection direction)
