@@ -74,7 +74,7 @@ public class HexGridChunk : MonoBehaviour
         }
         if (!cell.IsUnderwater && !cell.HasRiver && !cell.HasRoads)
         {
-            features.AddFeature(cell.Position);
+            features.AddFeature(cell, cell.Position);
         }
     }
 
@@ -111,7 +111,7 @@ public class HexGridChunk : MonoBehaviour
 
             if (!cell.IsUnderwater && !cell.HasRoadThroughEdge(direction))
             {
-                features.AddFeature((center + e.v1 + e.v5) * (1f / 3f));
+                features.AddFeature(cell, (center + e.v1 + e.v5) * (1f / 3f));
             }
         }
 
@@ -365,7 +365,7 @@ public class HexGridChunk : MonoBehaviour
 
         if (!cell.IsUnderwater && !cell.HasRoadThroughEdge(direction))
         {
-            features.AddFeature((center + e.v1 + e.v5) * (1f / 3f));
+            features.AddFeature(cell, (center + e.v1 + e.v5) * (1f / 3f));
         }
     }
 

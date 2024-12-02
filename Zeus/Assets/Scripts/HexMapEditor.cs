@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -13,6 +11,8 @@ public class HexMapEditor : MonoBehaviour
     int activeElevation;
     int activeWaterLevel;
 
+    int activeUrbanLevel;
+
     Color activeColor;
 
     int brushSize;
@@ -20,6 +20,8 @@ public class HexMapEditor : MonoBehaviour
     bool applyColor;
     bool applyElevation = true;
     bool applyWaterLevel = true;
+
+    bool applyUrbanLevel;
 
     enum OptionalToggle
     {
@@ -55,9 +57,20 @@ public class HexMapEditor : MonoBehaviour
     {
         applyWaterLevel = toggle;
     }
+
     public void SetWaterLevel(float level)
     {
         activeWaterLevel = (int)level;
+    }
+
+    public void SetApplyUrbanLevel(bool toggle)
+    {
+        applyUrbanLevel = toggle;
+    }
+
+    public void SetUrbanLevel(float level)
+    {
+        activeUrbanLevel = (int)level;
     }
 
     public void SetBrushSize(float size)
@@ -177,6 +190,10 @@ public class HexMapEditor : MonoBehaviour
             if (applyWaterLevel)
             {
                 cell.WaterLevel = activeWaterLevel;
+            }
+            if (applyUrbanLevel)
+            {
+                cell.UrbanLevel = activeUrbanLevel;
             }
             if (riverMode == OptionalToggle.No)
             {
