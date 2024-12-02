@@ -2607,12 +2607,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chunkCountX: 4
   chunkCountZ: 3
-  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   cellPrefab: {fileID: 6337877391142038625, guid: e85d3e1f0dbf25945bd7ffc1ea3c674a, type: 3}
   cellLabelPrefab: {fileID: 5656475438645598492, guid: 4cd4231fc8775f24c963c845c85c6394, type: 3}
   chunkPrefab: {fileID: 5332375569129040077, guid: 174d6682f49ee794586fc27a03a32fd4, type: 3}
   noiseSource: {fileID: 2800000, guid: b989f0e5adfbafe498b9d3a911b326a9, type: 3}
   seed: 1234
+  colors:
+  - {r: 1, g: 0.86274517, b: 0, a: 1}
+  - {r: 0.003921569, g: 0.68235296, b: 0.03137255, a: 0}
+  - {r: 0.07450981, g: 0.21960786, b: 0.83921576, a: 0}
+  - {r: 1, g: 0.30588236, b: 0.10588236, a: 0}
+  - {r: 1, g: 1, b: 1, a: 0}
 --- !u!4 &506650604
 Transform:
   m_ObjectHideFlags: 0
@@ -5680,12 +5685,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e363bf5181e448a78cb05f5d6a64930, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colors:
-  - {r: 1, g: 0.8856366, b: 0.066037595, a: 0}
-  - {r: 0.11327721, g: 0.6301887, b: 0.022591582, a: 0}
-  - {r: 0.07450981, g: 0.21960784, b: 0.8392157, a: 0}
-  - {r: 0.95686275, g: 0.46318945, b: 0, a: 1}
-  - {r: 1, g: 1, b: 1, a: 0}
   hexGrid: {fileID: 506650603}
 --- !u!114 &1038429833
 MonoBehaviour:
