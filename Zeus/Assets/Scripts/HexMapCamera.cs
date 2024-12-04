@@ -36,13 +36,9 @@ public class HexMapCamera : MonoBehaviour
 
     void Awake()
     {
+        instance = this;
         swivel = transform.GetChild(0);
         stick = swivel.GetChild(0);
-    }
-
-    void OnEnable()
-    {
-        instance = this;
     }
 
     void Update()
