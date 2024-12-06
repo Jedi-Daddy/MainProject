@@ -15,8 +15,6 @@ public class HexGrid : MonoBehaviour
 
     public int seed;
 
-    //	public Color[] colors;
-
     HexGridChunk[] chunks;
     HexCell[] cells;
 
@@ -26,7 +24,6 @@ public class HexGrid : MonoBehaviour
     {
         HexMetrics.noiseSource = noiseSource;
         HexMetrics.InitializeHashGrid(seed);
-        //		HexMetrics.colors = colors;
         CreateMap(cellCountX, cellCountZ);
     }
 
@@ -91,7 +88,6 @@ public class HexGrid : MonoBehaviour
         {
             HexMetrics.noiseSource = noiseSource;
             HexMetrics.InitializeHashGrid(seed);
-            //			HexMetrics.colors = colors;
         }
     }
 
@@ -165,7 +161,6 @@ public class HexGrid : MonoBehaviour
         Text label = Instantiate<Text>(cellLabelPrefab);
         label.rectTransform.anchoredPosition =
             new Vector2(position.x, position.z);
-        label.text = cell.coordinates.ToStringOnSeparateLines();
         cell.uiRect = label.rectTransform;
 
         cell.Elevation = 0;

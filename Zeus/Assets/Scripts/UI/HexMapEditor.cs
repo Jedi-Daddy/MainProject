@@ -18,6 +18,8 @@ public class HexMapEditor : MonoBehaviour
 
     int brushSize;
 
+    bool editMode;
+
     bool applyElevation = true;
     bool applyWaterLevel = true;
 
@@ -119,9 +121,10 @@ public class HexMapEditor : MonoBehaviour
         walledMode = (OptionalToggle)mode;
     }
 
-    public void ShowUI(bool visible)
+    public void SetEditMode(bool toggle)
     {
-        hexGrid.ShowUI(visible);
+        editMode = toggle;
+        hexGrid.ShowUI(!toggle);
     }
 
     public void ShowGrid(bool visible)
@@ -171,7 +174,10 @@ public class HexMapEditor : MonoBehaviour
             {
                 isDrag = false;
             }
-            EditCells(currentCell);
+            if (editMode)
+            {
+                EditCells(currentCell);
+            }
             previousCell = currentCell;
         }
         else
