@@ -279,6 +279,19 @@ public class HexCell : MonoBehaviour
         }
     }
 
+    public int Distance
+    {
+        get
+        {
+            return distance;
+        }
+        set
+        {
+            distance = value;
+            UpdateDistanceLabel();
+        }
+    }
+
     int terrainTypeIndex;
 
     int elevation = int.MinValue;
@@ -287,6 +300,8 @@ public class HexCell : MonoBehaviour
     int urbanLevel, farmLevel, plantLevel;
 
     int specialIndex;
+
+    int distance;
 
     bool walled;
 
@@ -576,5 +591,11 @@ public class HexCell : MonoBehaviour
         {
             roads[i] = (roadFlags & (1 << i)) != 0;
         }
+    }
+
+    void UpdateDistanceLabel()
+    {
+        UnityEngine.UI.Text label = uiRect.GetComponent<UnityEngine.UI.Text>();
+        label.text = distance.ToString();
     }
 }
