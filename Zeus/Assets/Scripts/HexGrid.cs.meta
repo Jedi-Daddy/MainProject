@@ -3,7 +3,11 @@ guid: 73a14902ea33df8419ed6b54e8d2ab05
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - cellPrefab: {instanceID: 0}
+  - cellLabelPrefab: {instanceID: 0}
+  - chunkPrefab: {instanceID: 0}
+  - noiseSource: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

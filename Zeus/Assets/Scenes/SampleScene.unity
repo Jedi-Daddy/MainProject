@@ -311,7 +311,7 @@ GameObject:
   - component: {fileID: 11940813}
   - component: {fileID: 11940814}
   m_Layer: 5
-  m_Name: Color Green
+  m_Name: Terrain Grass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -832,7 +832,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Wh
+  m_Text: Sw
 --- !u!222 &69089705
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1332,7 +1332,7 @@ GameObject:
   - component: {fileID: 133830288}
   - component: {fileID: 133830289}
   m_Layer: 5
-  m_Name: Color White
+  m_Name: Terrain Snow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2748,12 +2748,6 @@ MonoBehaviour:
   chunkPrefab: {fileID: 5332375569129040077, guid: 174d6682f49ee794586fc27a03a32fd4, type: 3}
   noiseSource: {fileID: 2800000, guid: b989f0e5adfbafe498b9d3a911b326a9, type: 3}
   seed: 1234
-  colors:
-  - {r: 1, g: 0.86274517, b: 0, a: 1}
-  - {r: 0.003921569, g: 0.68235296, b: 0.03137255, a: 0}
-  - {r: 0.07450981, g: 0.21960786, b: 0.83921576, a: 0}
-  - {r: 1, g: 0.30588236, b: 0.10588236, a: 0}
-  - {r: 1, g: 1, b: 1, a: 0}
 --- !u!4 &506650604
 Transform:
   m_ObjectHideFlags: 0
@@ -3007,7 +3001,7 @@ GameObject:
   - component: {fileID: 546609302}
   - component: {fileID: 546609303}
   m_Layer: 5
-  m_Name: Color Blue
+  m_Name: Terrain Mud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5843,7 +5837,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Gr
+  m_Text: Grs
 --- !u!222 &876249711
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6838,7 +6832,7 @@ GameObject:
   - component: {fileID: 1042189313}
   - component: {fileID: 1042189314}
   m_Layer: 5
-  m_Name: Color ---
+  m_Name: Terrain ---
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7147,6 +7141,37 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1089501815
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1089501816}
+  m_Layer: 0
+  m_Name: Massive
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1089501816
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089501815}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 908.1528, y: 292.75717, z: -1.3771847}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1115404716
 GameObject:
   m_ObjectHideFlags: 0
@@ -7351,7 +7376,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Or
+  m_Text: Stn
 --- !u!222 &1221379086
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7373,7 +7398,7 @@ GameObject:
   - component: {fileID: 1237475129}
   - component: {fileID: 1237475128}
   m_Layer: 5
-  m_Name: ColorPanel
+  m_Name: Terrain Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8563,7 +8588,7 @@ GameObject:
   - component: {fileID: 1449140455}
   - component: {fileID: 1449140456}
   m_Layer: 5
-  m_Name: Color Yellow
+  m_Name: Terrain Sand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9832,7 +9857,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ye
+  m_Text: Snd
 --- !u!222 &1618995287
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11620,7 +11645,7 @@ GameObject:
   - component: {fileID: 1859828547}
   - component: {fileID: 1859828548}
   m_Layer: 5
-  m_Name: Color Orange
+  m_Name: Terrain Stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12238,7 +12263,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Bl
+  m_Text: Md
 --- !u!222 &1918684386
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15671,3 +15696,4 @@ SceneRoots:
   - {fileID: 506650604}
   - {fileID: 263789878}
   - {fileID: 821325179}
+  - {fileID: 1089501816}
