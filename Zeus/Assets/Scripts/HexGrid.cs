@@ -291,6 +291,8 @@ public class HexGrid : MonoBehaviour
                 {
                     neighbor.Distance = distance;
                     neighbor.PathFrom = current;
+                    neighbor.SearchHeuristic =
+                        neighbor.coordinates.DistanceTo(toCell.coordinates);
                     frontier.Add(neighbor);
                 }
                 else if (distance < neighbor.Distance)
@@ -298,7 +300,9 @@ public class HexGrid : MonoBehaviour
                     neighbor.Distance = distance;
                     neighbor.PathFrom = current;
                 }
-                frontier.Sort((x, y) => x.Distance.CompareTo(y.Distance));
+                frontier.Sort(
+                    (x, y) => x.SearchPriority.CompareTo(y.SearchPriority)
+                );
             }
         }
     }

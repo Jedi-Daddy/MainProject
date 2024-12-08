@@ -295,6 +295,16 @@ public class HexCell : MonoBehaviour
 
     public HexCell PathFrom { get; set; }
 
+    public int SearchHeuristic { get; set; }
+
+    public int SearchPriority
+    {
+        get
+        {
+            return distance + SearchHeuristic;
+        }
+    }
+
     int terrainTypeIndex;
 
     int elevation = int.MinValue;
