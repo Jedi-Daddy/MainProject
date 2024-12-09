@@ -2899,6 +2899,7 @@ MonoBehaviour:
   cellPrefab: {fileID: 6337877391142038625, guid: e85d3e1f0dbf25945bd7ffc1ea3c674a, type: 3}
   cellLabelPrefab: {fileID: 5656475438645598492, guid: 4cd4231fc8775f24c963c845c85c6394, type: 3}
   chunkPrefab: {fileID: 5332375569129040077, guid: 174d6682f49ee794586fc27a03a32fd4, type: 3}
+  unitPrefab: {fileID: 6755620204631812018, guid: af694c42f87fd854a9effd11bf3488e0, type: 3}
   noiseSource: {fileID: 2800000, guid: b989f0e5adfbafe498b9d3a911b326a9, type: 3}
   seed: 1234
 --- !u!4 &506650604
@@ -6916,7 +6917,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hexGrid: {fileID: 506650603}
   terrainMaterial: {fileID: 2100000, guid: 2d70f045b8fb8df4ebe3d1689bb282b9, type: 2}
-  unitPrefab: {fileID: 6755620204631812018, guid: af694c42f87fd854a9effd11bf3488e0, type: 3}
 --- !u!114 &1038429833
 MonoBehaviour:
   m_ObjectHideFlags: 0
