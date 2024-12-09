@@ -292,6 +292,8 @@ public class HexCell : MonoBehaviour
         }
     }
 
+    public HexUnit Unit { get; set; }
+
     public HexCell PathFrom { get; set; }
 
     public int SearchHeuristic { get; set; }
@@ -520,12 +522,20 @@ public class HexCell : MonoBehaviour
                     neighbor.chunk.Refresh();
                 }
             }
+            if (Unit)
+            {
+                Unit.ValidateLocation();
+            }
         }
     }
 
     void RefreshSelfOnly()
     {
         chunk.Refresh();
+        if (Unit)
+        {
+            Unit.ValidateLocation();
+        }
     }
 
     public void Save(BinaryWriter writer)
