@@ -277,9 +277,16 @@ public class HexCell : MonoBehaviour
             if (terrainTypeIndex != value)
             {
                 terrainTypeIndex = value;
-                //				Refresh();
                 ShaderData.RefreshTerrain(this);
             }
+        }
+    }
+
+    public bool IsVisible
+    {
+        get
+        {
+            return visibility > 0;
         }
     }
 
@@ -326,6 +333,8 @@ public class HexCell : MonoBehaviour
 
     int distance;
 
+    int visibility;
+
     bool walled;
 
     bool hasIncomingRiver, hasOutgoingRiver;
@@ -336,6 +345,24 @@ public class HexCell : MonoBehaviour
 
     [SerializeField]
     bool[] roads;
+
+    public void IncreaseVisibility()
+    {
+        visibility += 1;
+        if (visibility == 1)
+        {
+            ShaderData.RefreshVisibility(this);
+        }
+    }
+
+    public void DecreaseVisibility()
+    {
+        visibility -= 1;
+        if (visibility == 0)
+        {
+            ShaderData.RefreshVisibility(this);
+        }
+    }
 
     public HexCell GetNeighbor(HexDirection direction)
     {
