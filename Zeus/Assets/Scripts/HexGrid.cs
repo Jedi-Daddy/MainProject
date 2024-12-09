@@ -18,6 +18,14 @@ public class HexGrid : MonoBehaviour
 
     public int seed;
 
+    public bool HasPath
+    {
+        get
+        {
+            return currentPathExists;
+        }
+    }
+
     HexGridChunk[] chunks;
     HexCell[] cells;
 
@@ -128,6 +136,16 @@ public class HexGrid : MonoBehaviour
             HexMetrics.InitializeHashGrid(seed);
             HexUnit.unitPrefab = unitPrefab;
         }
+    }
+
+    public HexCell GetCell(Ray ray)
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit))
+        {
+            return GetCell(hit.point);
+        }
+        return null;
     }
 
     public HexCell GetCell(Vector3 position)
@@ -272,7 +290,7 @@ public class HexGrid : MonoBehaviour
         }
     }
 
-    void ClearPath()
+    public void ClearPath()
     {
         if (currentPathExists)
         {
@@ -357,7 +375,7 @@ public class HexGrid : MonoBehaviour
                 {
                     continue;
                 }
-                if (neighbor.IsUnderwater)
+                if (neighbor.IsUnderwater || neighbor.Unit)
                 {
                     continue;
                 }

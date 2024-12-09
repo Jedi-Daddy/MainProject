@@ -14,6 +14,10 @@ public class HexUnit : MonoBehaviour
         }
         set
         {
+            if (location)
+            {
+                location.Unit = null;
+            }
             location = value;
             value.Unit = this;
             transform.localPosition = value.Position;
@@ -40,6 +44,11 @@ public class HexUnit : MonoBehaviour
     public void ValidateLocation()
     {
         transform.localPosition = location.Position;
+    }
+
+    public bool IsValidDestination(HexCell cell)
+    {
+        return !cell.IsUnderwater && !cell.Unit;
     }
 
     public void Die()
