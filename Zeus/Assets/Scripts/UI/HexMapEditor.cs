@@ -178,7 +178,9 @@ public class HexMapEditor : MonoBehaviour
             {
                 EditCells(currentCell);
             }
-            else if (Input.GetKey(KeyCode.LeftShift))
+            else if (
+                Input.GetKey(KeyCode.LeftShift) && searchToCell != currentCell
+            )
             {
                 if (searchFromCell != currentCell)
                 {

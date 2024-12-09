@@ -304,6 +304,8 @@ public class HexCell : MonoBehaviour
         }
     }
 
+    public int SearchPhase { get; set; }
+
     public HexCell NextWithSamePriority { get; set; }
 
     int terrainTypeIndex;
