@@ -113,17 +113,21 @@ public class HexUnit : MonoBehaviour
         Quaternion fromRotation = transform.localRotation;
         Quaternion toRotation =
             Quaternion.LookRotation(point - transform.localPosition);
-        float speed = rotationSpeed / Quaternion.Angle(fromRotation, toRotation);
+        float angle = Quaternion.Angle(fromRotation, toRotation);
 
-        for (
-            float t = Time.deltaTime * speed;
-            t < 1f;
-            t += Time.deltaTime * speed
-        )
+        if (angle > 0f)
         {
-            transform.localRotation =
-                Quaternion.Slerp(fromRotation, toRotation, t);
-            yield return null;
+            float speed = rotationSpeed / angle;
+            for (
+                float t = Time.deltaTime * speed;
+                t < 1f;
+                t += Time.deltaTime * speed
+            )
+            {
+                transform.localRotation =
+                    Quaternion.Slerp(fromRotation, toRotation, t);
+                yield return null;
+            }
         }
 
         transform.LookAt(point);
